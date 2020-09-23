@@ -28,6 +28,7 @@ fields:
 - type: file
   name: image
   label: Image
+  default: "/images/news-placeholder.png"
 pages:
 - content/news/33.md
 - content/news/evolving-toolbox-for-complex-project-management.md
