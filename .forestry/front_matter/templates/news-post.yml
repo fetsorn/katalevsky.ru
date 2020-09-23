@@ -28,6 +28,7 @@ fields:
 - type: file
   name: image
   label: Image
+  default: "/images/news-placeholder.png"
 pages:
 - content/news/33.md
 - content/news/evolving-toolbox-for-complex-project-management.md
@@ -43,5 +44,4 @@ pages:
 - content/news/могучий-тор-территории-развития-оказались-эффективнее-оэз.md
 - content/news/новая-публикация.md
 - content/news/новости-ранхигс-доцент-ибда-ранхигс-стал-соавтором-вышедшего-в-сша-исследования.md
-- content/news/слишком-дальний-иностранные-инвесторы-не-спешат-вкладывать-в-дфо.md
 - content/news/ученых-просят-произвести-эффект-счетная-палата-раскритиковала-систему-финансирования-науки.md

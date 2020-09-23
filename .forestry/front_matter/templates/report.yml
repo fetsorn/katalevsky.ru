@@ -17,6 +17,7 @@ fields:
   config:
     maxSize: 64
   label: Image-A
+  default: "/images/report-default.png"
 - name: image-b
   type: file
   config:
