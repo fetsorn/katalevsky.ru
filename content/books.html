@@ -1,0 +1,228 @@
+---
+---
+
+  <script>
+var currentEl;
+$(document)
+    .ready(function() {
+
+$('.selection.dropdown')
+  .dropdown()
+;
+$('.request.modal')
+    .modal('attach events', '.request.button', 'show')
+;
+
+$('.request.modal').modal({
+    onApprove : function() {
+        //Submits the semantic ui form
+        //And pass the handling responsibilities to the form handlers,
+        // e.g. on form validation success
+        $('.request.form').submit();
+        //Return false as to not close modal dialog
+        return false;
+    }
+});
+
+var formValidationRules =
+    {
+        name: {
+            identifier  : 'name',
+            rules: [
+                {
+                    type   : 'empty',
+                },
+            ]
+        },
+        email: {
+            identifier  : 'email',
+            rules: [
+                {
+                    type   : 'email',
+                },
+            ]
+        },
+    }
+
+var formSettings =
+    {
+        onSuccess : function()
+        {
+            //Hides modal on validation success
+            $('.request.modal').modal('hide');
+            window.open(currentEl, '_blank');
+        }
+    }
+
+$('.request.form').form(formValidationRules, formSettings);
+
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbw-nOO_Dvkfp0QkjwuEzMeZKM_J2wuclJDvuLEcurY3n2Jv77Q/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+    })
+  </script>
+<div class="ui segment basic"></div>
+<div class="ui vertical segment" id="book-model">
+  <div class="ui grid container equal width stackable">
+    <div class="column">
+      <img class="ui image centered" src="/images/book-model.png">
+    </div>
+    <div class="column middle aligned">
+      <h2 class="ui header">
+        Основы имитационного моделирования и системного анализа в управлении
+        <div class="ui sub header">Учебное пособие</div>
+      </h2>
+      <a class="ui request button orange" data-href="https://drive.google.com/open?id=18TAwT7EUMzhIzLQzeiFsnRt3R-mKz3FQ" target="_blank" onclick="currentEl=this.getAttribute('data-href');">Скачать</a>
+      <p>
+        Книга задумана как учебное пособие для широкого круга читателей,
+        интересующихся новейшими достижениями в области имитационного
+        моделирования применительно к проблемам управления.
+      </p>
+      <p>
+        Учебное пособие состоит из двух частей: в первой части дана
+        теория принятия решений в динамически сложной среде, описаны
+        феномены контр-интуитивного и «возникающего» (emerging) поведения сложных систем.
+      </p>
+      <p>
+        Во второй части учебного пособия собраны практические кейсы применения
+        системной динамики и агентного моделирования к проблемам бизнеса и государственного управления.
+      </p>
+      <p>
+        Задача книги  помочь читателю сформировать навыки системного мышления,
+        критически важные для современного управления. На протяжении всего учебного пособия
+        последовательно рассматривается прикладной инструментарий системного анализа -
+        причинно-следственные диаграммы обратной связи, системная динамика, агентное моделирование,
+        приведены множество иллюстрирующих примеров.
+      </p>
+    </div>
+  </div>
+</div>
+<div class="ui vertical segment">
+  <div class="ui grid container stackable equal width">
+
+    <div class="ui column grid centered">
+      <div class="column four wide">
+        <img class="ui image circular" src="/images/book-review-myasoedov.png">
+      </div>
+      <div class="column twelve wide">
+        <em>
+          «Я не сомневаюсь, что книга окажется полезной для читателей,
+          занятых проектным управлением. Что она поможет российским предпринимателям,
+          бизнесменам и управленцам (причем, как в бизнесе, так и в сфере государственного управления)
+          найти новые пути для повышения эффективности».
+        </em>
+        <h3 class="ui header">
+          С. П. Мясоедов
+          <div class="ui sub header">
+            проректор РАНХиГС, директор ИБДА РАНХиГС, доктор cоциологических наук, профессор
+          </div>
+        </h3>
+      </div>
+    </div>
+    <div class="ui column grid centered">
+      <div class="column four wide">
+        <img class="ui image circular" src="/images/book-review-kavtaradze.png">
+      </div>
+      <div class="column twelve wide">
+        <em>
+          «Учебное пособие Д.Ю. Каталевского вводит в мир понятий и связей сложных
+          системных динамических процессов современности… Перед читателем не только открытая книга,
+          это и открывшаяся возможность шаг за шагом освоить новый метод мышления, который по интересности,
+          мощности и эффективности применительно к задачам управления не уступает интегральному исчислению в математике»
+        </em>
+        <h3 class="ui header">
+          Д.Н. Кавтарадзе
+          <div class="ui sub header">
+            д.б.н., профессор МГУ имени М.В. Ломоносова, лауреат Премии
+            Президента РФ в области образования, автор множества имитационных игр
+          </div>
+        </h3>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="ui vertical segment" id="book-agro">
+  <div class="ui grid container equal width stackable">
+    <div class="column">
+      <img class="ui image centered" src="/images/book-agro.png">
+    </div>
+    <div class="column middle aligned">
+      <h2 class="ui header">
+        Современные агротехнологии
+        <div class="ui sub header">Экономико-правовые и регуляторные аспекты</div>
+      </h2>
+      <a class="ui request button orange" data-href="https://drive.google.com/open?id=1dG1yEEzqZbUFetS1Ll3Yq77Um3lCzkYy" target="_blank" onclick="currentEl=this.getAttribute('data-href');">Скачать</a>
+      <p>
+        Cельское хозяйство cтремительно технологизируется, и новые технологии
+        кардинально перекраивают ландшафт отрасли. Подрывные сельскохозяйственные
+        технологии бросают беспрецедентный вызов национальным государственным системам,
+        требуя стремительной адаптации регулятивных норм к новым реалиям.
+      </p>
+      <p>
+        Цель работы  ознакомить читателей с современными технологическими достижениями,
+        с возможностями и рисками, возникающими вследствие использования новейших биотехнологий;
+        рассмотреть глобальную продовольственную цепочку, спрогнозировав последствия чрезмерной
+        концентрации отрасли; дать обзор регулирования интеллектуальной собственности через призму
+        сложившихся международных и национальных регуляторных систем; проанализировать передовой
+        опыт зарубежных стран в области регулирования биотехнологической отрасли (в США и странах BRICS),
+        соотнеся его с опытом регулирования агробиотехнологий в России.
+      </p>
+      <p>
+        Монография рассчитана на широкий круг лиц, интересующихся технологическими,
+        экономическими и регуляторно-правовыми аспектами современных сельскохозяйственных технологий,
+        и может быть полезна лицам, принимающим решения в области выработки практической
+        и научной сельскохозяйственной политики России.
+      </p>
+    </div>
+  </div>
+</div>
+<div class="ui vertical segment">
+  <div class="ui grid container stackable equal width">
+    <div class="ui column grid centered">
+      <div class="column four wide">
+        <img class="ui image circular" src="/images/book-review-kirpichnikov.png">
+      </div>
+      <div class="column twelve wide">
+        <em>
+          «Сельское хозяйство стремительно технологизируется. Заслуга
+          авторов и определенная научная новизна работы состоит в попытке взаимоувязать
+          ключевые аспекты технологического характера, экономических тенденций и
+          юридического регулирования сельскохозяйственной отрасли»
+        </em>
+        <h3 class="ui header">
+          М.П. Кирпичников
+          <div class="ui sub header">
+            академик, академик-секретарь Отделения биологических наук РАН, декан
+            биологического факультета МГУ им. М.В. Ломоносова.
+          </div>
+        </h3>
+      </div>
+    </div>
+    <div class="ui column grid centered">
+      <div class="column four wide">
+        <img class="ui image circular" src="/images/book-review-artemyev.png">
+      </div>
+      <div class="column twelve wide">
+        <em>
+          «Авторский коллектив проделал большую и важную работу по обобщению новейшего
+          мирового опыта в области агротехнологий. Надеюсь, что она найдет своего читателя
+          не только среди экспертов, но и среди тех, для кого технологическое развитие
+          агросектора России является текущей управленческой задачей».
+        </em>
+        <h3 class="ui header">
+          И.Ю. Артемьев
+          <div class="ui sub header">
+            кандидат биологических наук, руководитель Федеральной антимонопольной
+            службы России, заведующий кафедрой ФАС России факультета права НИУ ВШЭ
+          </div>
+        </h3>
+      </div>
+    </div>
+  </div>
+</div>

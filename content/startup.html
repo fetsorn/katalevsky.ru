@@ -1,0 +1,298 @@
+---
+---
+
+  <script>
+$(document)
+    .ready(function() {
+$('.msu.modal')
+  .modal('attach events', '.msu.button', 'show')
+;
+$('.mshu.modal')
+  .modal('attach events', '.mshu.button', 'show')
+;
+$('.otus.modal')
+  .modal('attach events', '.otus.button', 'show')
+;
+$('.certificate.modal')
+  .modal('attach events', '.certificate.button', 'show')
+;
+$('.definition.sticky')
+    .sticky({
+        context: '#definition__content',
+        pushing: false,
+        offset: 100,
+    })
+;
+    })
+  </script>
+
+  <style type="text/css">
+.definition__span {
+    display: block;
+    //text-indent: -1em;
+    font-family: georgia, serif;
+    color: #222222;
+}
+
+.definition.sticky {
+    z-index: -1;
+}
+
+#definition__content {
+    color: #333;
+    line-height: 1.7;
+}
+
+.definition__mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .definition__mobile {
+        display: block;
+    }
+    .definition__desktop {
+        display: none;
+    }
+}
+  </style>
+
+<div class="ui segment basic"></div>
+<div class="ui vertical segment">
+  <div class="ui grid container two columns stackable mobile reversed">
+    <div class="ui column middle aligned">
+      <div class="ui segment basic justified">
+        <h2 class="ui header center aligned">
+          Имитационная модель-тренажер по развитию иновационного стартапа
+        </h2>
+        <div class="ui segment basic center aligned">
+          <a class="ui button violet centered" target="_blank" href="https://drive.google.com/open?id=1DbMLI7ChEDG82gfc0GyiJj3sDaOo4CDB">Скачать инструкцию</a>
+          <a class="ui request button orange centered">Запросить информацию</a>
+        </div>
+        <div class="ui segment basic">
+          <div class="ui sub header">
+            Имитационная модель «Стартап: пределы роста»
+          </div>
+          Модель «Стартап: пределы роста» с успехом использовалась
+          на программах ведущих российских бизнес-школ, включая программы MBA/ Executive MBA РАНХиГС,
+          Стартап-Академии Московской бизнес-школы Сколково, на экономическом факультете МГУ им. М.В. Ломоносова,
+          в образовательной программе Открытого университета Сколково (ОтУС) и др.
+        </div>
+      </div>
+    </div>
+    <div class="ui column center aligned">
+      <div>
+        <img class="ui image medium centered" src="/images/startup-cover-rust.png">
+      </div>
+      <br>
+    </div>
+  </div>
+</div>
+
+<div class="ui vertical segment">
+  <div class="ui grid container stackable equal width">
+    <div class="column"><img class="ui small image centered" src="/images/partners-ibda.png"></div>
+    <div class="column"><img class="ui small image centered" src="/images/partners-mshu.png"></div>
+    <div class="column"><img class="ui small image centered" src="/images/partners-emsu.png"></div>
+    <div class="column"><img class="ui small image centered" src="/images/partners-otus.gif"></div>
+  </div>
+</div>
+
+<div class="ui vertical segment">
+  <div class="ui grid container stackable definition">
+    <div class="column six wide">
+      <div class="definition__desktop">
+        <div class="ui rail">
+          <div class="ui definition sticky segment very padded basic">
+            <h1 class="ui header">
+              Что такое
+              <span class="ui text large yellow definition__span">имитационные игры?</span>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="definition__mobile">
+      <div class="column six wide">
+        <div class="ui definition segment very padded basic">
+          <h1 class="ui header">
+            Что такое
+            <span class="ui text large yellow definition__span">имитационные игры?</span>
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div class="column ten wide">
+      <div class="ui segment basic very padded" id="definition__content">
+        <p>
+          Имитационные игры, также известные как «Микромиры» (microworlds),  это бизнес-игры,
+          в основе которых лежат сложные компьютерные модели, учитывающие обратные связи,
+          нелинейные эффекты и механизмы запаздывания.
+        </p>
+        <p>
+          Это своеобразные «Лаборатории обучения» науки управления
+          с минимальными издержками по времени, затратам и последствиям принятия решений.
+        </p>
+        <p>
+          Имитационные игры на основе компьютерных моделей сегодня активно используются
+          в программах ведущих бизнес-школ, включая Sloan Business School MIT, Harvard Business School и других.
+        </p>
+        <p>
+          Имитационные игры позволяют на практике реализовать принцип «обучения действием» (learning by doing),
+          учесть множественность сценариев развития моделируемой управленческой ситуации, в полной мере получить
+          обучающий «эффект озарения» (insight learning) для участников игры.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="ui vertical segment">
+  <div class="ui grid container stackable equal width">
+
+    <div class="column">
+      <div class="ui basic segment">
+        <h2 class="ui header centered dividing">Особенности курса:</h2>
+        <div class="ui bulleted list">
+          <p class="item">
+            <strong>Высокая интерактивность</strong> и <strong>хорошая визуализация</strong>
+          </p>
+          <p class="item">
+            Возможность воссоздать <strong>сложные сценарии</strong> на основе новейших методов имитационного моделирования
+          </p>
+          <p class="item">
+            <strong>Сбалансированность моделей</strong> в плане «сложность/играбельность»
+          </p>
+          <p class="item">
+            <strong>Одновременная игра</strong> нескольких команд (до 30 чел.)
+          </p>
+          <p class="item">
+            <strong>Качественный методический материал</strong> (кейс, инструкции, разбор итогов)
+          </p>
+          <p class="item">
+            <strong>Научные основы</strong> - использование современных актуальных исследований в области управления, которые лежат в основе игры
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column middle aligned">
+      <div class="ui basic segment">
+        <img class="ui image" src="/images/bg-green.jpg">
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="ui vertical segment">
+  <div class="ui container">
+    <div class="ui segment raised center aligned">
+      <p>
+        На имитационный тренажер "Стартап: пределы роста" получено
+        <strong>Свидетельство о государственной регистрации программы на ЭВМ № 2019615174</strong>
+      </p>
+      <br>
+      <a class="ui certificate button secondary basic">Показать свидетельство</a>
+    </div>
+  </div>
+</div>
+
+<div class="ui certificate modal basic">
+  <i class="ui icon close"></i>
+  <img class="ui big image centered" src="/images/startup-certificate.jpg">
+</div>
+
+<div class="ui vertical segment">
+  <div class="ui container">
+
+    <div class="ui grid centered">
+      <div class="column four wide middle aligned">
+        <img class="ui image centered" src="/images/partners-emsu.png">
+        <a class="ui msu button basic centered">Смотреть отзыв</a>
+      </div>
+      <div class="column twelve wide middle aligned">
+        <h3 class="ui header">
+          Экономический факультет МГУ имени М.В. Ломоносова
+          <div class="ui sub header">
+          </div>
+        </h3>
+        <em>
+          «
+          Подобные разработки и их внедрение в подготовку студентов позволяют реализовывать
+          процесс обучения с точки зрения компетентностного подхода более эффективно -
+          формировать и закреплять управленческие навыки студентов, а также поддерживать
+          использование лучших бизнес-практик в образовательном процессе
+          »
+        </em>
+      </div>
+    </div>
+
+    <div class="ui grid centered">
+      <div class="column four wide middle aligned">
+        <img class="ui image centered" src="/images/partners-mshu.png">
+        <a class="ui mshu button basic centered">Смотреть отзыв</a>
+      </div>
+      <div class="column twelve wide middle aligned">
+        <h3 class="ui header">
+          Московская школа управления "СКОЛКОВО"
+          <div class="ui sub header">
+          </div>
+        </h3>
+        <em>
+          «
+          Особо хочется отметить высокую интерактивность и вовлеченность слушателей в процесс игры,
+          напряженную динамику конкуренции команд между собой (вплоть до последнего хода),
+          позитивную атмосферу проведения игры.
+          »
+        </em>
+      </div>
+    </div>
+
+    <div class="ui grid centered">
+      <div class="column four wide middle aligned">
+        <img class="ui image centered" src="/images/partners-otus.gif">
+        <a class="ui otus button basic centered">Смотреть отзыв</a>
+      </div>
+      <div class="column twelve wide middle aligned">
+        <h3 class="ui header">
+          Открытый университет "СКОЛКОВО"
+          <div class="ui sub header">
+          </div>
+        </h3>
+        <em>
+          «
+          Игра "Стартап" вызвала положительный отклик - участники отмечали высокую интерактивность,
+          оригинальный сценарий, реальность жизненной ситуации и новые возможности тренировки
+          навыка принятия решений. По результам проведения игровой сессии многие участники проявили
+          неподдельный интерес к дальнейшему использованию игры в своей образовательной практике.
+          »
+        </em>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="ui msu modal basic">
+  <i class="ui icon close"></i>
+  <img class="ui big image centered" src="/images/startup-review-msu.png">
+</div>
+<div class="ui mshu modal basic">
+  <i class="ui icon close"></i>
+  <img class="ui big image centered" src="/images/startup-review-mshu1.png">
+  <img class="ui big image centered" src="/images/startup-review-mshu2.png">
+</div>
+<div class="ui otus modal basic">
+  <i class="ui icon close"></i>
+  <img class="ui big image centered" src="/images/startup-review-otus.png">
+</div>
+
+
+<div class="ui vertical segment">
+  <div class="ui text container center aligned">
+    <svg class="ui image tiny" style="fill:#ffe100; " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 180">
+      <path d="M54.1 108c-.5 0-.9-.2-1.2-.6-.5-.7-.3-1.6.4-2.1 1.5-1 9.5-5.5 14.6-8.3-17.4-.5-31.3-7.3-41.3-20C9.9 55.7 9.5 24.2 14.2 3.7c.2-.8 1-1.3 1.8-1.1.8.2 1.3 1 1.1 1.8-4.6 19.9-4.2 50.3 11.8 70.8 9.5 12.2 23 18.6 39.9 18.9h.3l-3.2-4c-1.4-1.7-2.7-3.3-4.1-5.1-.7-.9-1.5-1.9-2.3-2.9-.5-.6-.4-1.6.2-2.1.6-.5 1.6-.4 2.1.2 0 0 0 .1.1.1l6.4 7.9c.5.6.9 1.1 1.4 1.7 1.5 1.8 3.1 3.6 4.3 5.5 0 .1.1.1.1.2.1.2.1.3.2.5v.3c0 .2 0 .3-.1.5 0 .1-.1.1-.1.2-.1.2-.2.3-.3.4-.1.1-.2.1-.3.2 0 0-.1 0-.2.1-.9.4-16 8.6-18.2 10.1-.4 0-.7.1-1 .1z"></path>
+    </svg>
+    <a class="ui request button orange centered">Сделать запрос</a>
+  </div>
+</div>

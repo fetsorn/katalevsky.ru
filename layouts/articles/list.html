@@ -1,0 +1,81 @@
+{{ define "main" }}
+  <script>
+var currentEl;
+$(document)
+    .ready(function() {
+
+$('.selection.dropdown')
+  .dropdown()
+;
+$('.request.modal')
+    .modal('attach events', '.request.button', 'show')
+;
+
+$('.request.modal').modal({
+    onApprove : function() {
+        //Submits the semantic ui form
+        //And pass the handling responsibilities to the form handlers,
+        // e.g. on form validation success
+        $('.request.form').submit();
+        //Return false as to not close modal dialog
+        return false;
+    }
+});
+
+var formValidationRules =
+    {
+        name: {
+            identifier  : 'name',
+            rules: [
+                {
+                    type   : 'empty',
+                },
+            ]
+        },
+        email: {
+            identifier  : 'email',
+            rules: [
+                {
+                    type   : 'email',
+                },
+            ]
+        },
+    }
+
+var formSettings =
+    {
+        onSuccess : function()
+        {
+            //Hides modal on validation success
+            $('.request.modal').modal('hide');
+            window.open(currentEl, '_blank');
+        }
+    }
+
+$('.request.form').form(formValidationRules, formSettings);
+
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbw-nOO_Dvkfp0QkjwuEzMeZKM_J2wuclJDvuLEcurY3n2Jv77Q/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+    })
+  </script>
+  <div class="ui segment basic"></div>
+  <div class="ui segment vertical">
+    <div class="ui stackable two column grid container">
+      {{ range .Pages.GroupByDate "2006"}}
+        {{ partial "articles-year.html" .Key }}
+           <div class="ten wide column">
+             {{ range .Pages }}
+                {{ partial "article.html" . }}
+            {{ end }}
+         </div>
+      {{ end }}
+    </div>
+  </div>
+{{ end }}

@@ -1,0 +1,351 @@
+---
+---
+
+  <script>
+$(document)
+    .ready(function() {
+$('.definition.sticky')
+    .sticky({
+        context: '#definition__content',
+        pushing: false,
+        offset: 100,
+    })
+;
+    })
+  </script>
+
+  <style type="text/css">
+
+.bg {
+    background-image: url("/images/bg-white.jpg");
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 94% 100%, 0% 100%);
+}
+.definition__span {
+    display: block;
+    //text-indent: -1em;
+    font-family: georgia, serif;
+    color: #222222;
+}
+
+.definition.sticky {
+    z-index: -1;
+}
+
+#definition__content {
+    color: #333;
+    line-height: 1.7;
+}
+
+.definition__mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .definition__mobile {
+        display: block;
+    }
+    .definition__desktop {
+        display: none;
+    }
+}
+  </style>
+<div class="ui segment basic"></div>
+<div class="ui vertical segment">
+  <div class="ui grid container two columns stackable mobile reversed">
+    <div class="ui column middle aligned">
+      <div class="ui segment basic justified">
+        <h2 class="ui header center aligned">
+          Поведенческая экономика: практические аспекты
+        </h2>
+        <div class="ui segment basic center aligned">
+          <a class="ui request button orange centered">Запросить информацию</a>
+        </div>
+        <div class="ui segment basic">
+          <div class="ui sub header">
+            Поведенческая экономика в действии
+            <div class="ui sub header">
+              практический курс по принятию решений
+            </div>
+          </div>
+          Накопленные за последние 30 лет достижения поведенческой экономики
+          имеют высокое прикладное значение не только для менеджеров среднего и высшего звена,
+          но и для всех тех, кто заинтересован в принятии собственных максимально эффективных решений.
+        </div>
+      </div>
+    </div>
+    <div class="ui column center aligned">
+      <div>
+        <img class="ui image medium centered" src="/images/behavior-brain-shape.png">
+      </div>
+      <br>
+    </div>
+  </div>
+</div>
+
+<div class="ui vertical segment">
+  <div class="ui container grid equal width stackable center aligned">
+    <div class="column">
+      <i class="ui large icon hourglass half"></i>
+      <div>
+        Продолжительность курса <span class="ui yellow large text">12-24</span> часа (от 1 до 3 дней)
+      </div>
+    </div>
+
+    <div class="column">
+      <i class="ui large icon hourglass"></i>
+      <div>
+        Рекомендуемая продолжительность - не менее <span class="ui yellow large text">16</span> часов (2 полных дня по 8 часов каждый)
+      </div>
+    </div>
+
+    <div class="column">
+      <i class="ui large icon clock"></i>
+      <div>
+        Возможно чтение курса блоками по <span class="ui yellow large text">3-4</span> часа в течение нескольких вечерних занятий
+      </div>
+    </div>
+  </div>
+</div>
+<div class="ui vertical segment">
+  <div class="ui grid container stackable definition">
+    <div class="column six wide">
+      <div class="definition__desktop">
+        <div class="ui rail">
+          <div class="ui definition sticky segment very padded basic">
+            <h1 class="ui header">
+              Что такое
+              <span class="ui text large yellow definition__span">поведенческая экономика?</span>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="definition__mobile">
+      <div class="column six wide">
+        <div class="ui definition segment very padded basic">
+          <h1 class="ui header">
+            Что такое
+            <span class="ui text large yellow definition__span">поведенческая экономика?</span>
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div class="column ten wide">
+      <div class="ui segment basic very padded" id="definition__content">
+        <p>
+          Сравнительно молодое, но быстро набирающее популярность направление в микроэкономике,
+          изучающее различные иррациональные аспекты принятия решений человеком.
+        </p>
+        <p>
+          В основе лежит междисциплинарный подход на стыке когнитивной и социальной психологии,
+          экономической теории, теории принятия решений. Поведенческая экономика - это научно
+          обоснованная критика парадигмы «человека рационального», раскрывающая многогранный
+          мир неожиданных и неочевидных психологических особенностей принятия решений человеком.
+        </p>
+        <p>
+          Особое внимание уделяется обзору ключевых научных исследований и достижений
+          по поведенческой экономике за последние 30+ лет признанных специалистов
+          в данной области (включая исследования Д. Канемана и А. Тверски, отмеченные
+          нобелевской премией по экономике за 2008 г., Р. Талера, Дж. Лоуэнштейна,
+          Г. Саймона, К. Камерера, Д. Лэйбсона, Д. Ариэли и др.).
+        </p>
+        <p>
+          Особое внимание будет уделено изучению возможностей прикладного применения
+          поведенческой экономики в таких областях, как принятие финансовых решений,
+          реклама и маркетинг, HR-политики (система вознаграждений и бонусов) и других.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="ui vertical segment">
+  <div class="ui grid container equal width stackable">
+
+    <div class="ui column">
+      <div class="ui basic segment">
+        <h2 class="ui header centered dividing">
+          В рамках курса вы сможете:
+        </h2>
+        <div class="ui feed ">
+
+          <div class="event">
+            <div class="label">
+              <div class="ui label ribbon orange">1</div>
+            </div>
+            <div class="content">
+              <div class="summary">
+              </div>
+              <div class="extra text">
+                <strong>Ознакомиться</strong> c базовыми элементами теории поведенческой экономики:
+                теорией перспектив (prospect theory), гиперболическим дисконтированием (hyperbolic discounting),
+                «ментальной бухгалтерией» (mental accounting)
+              </div>
+            </div>
+          </div>
+
+          <div class="event">
+            <div class="label">
+              <div class="ui label ribbon orange">2</div>
+            </div>
+            <div class="content">
+              <div class="summary">
+              </div>
+              <div class="extra text">
+                <strong>Поработать</strong> с некоторыми важными поведенческими эффектами
+                (т.н. поведенческими эвристиками в принятии решений),
+                понимание которых позволит слушателям избежать ментальных ловушек
+                при принятии решений в бизнесе и повседневной жизни
+              </div>
+            </div>
+          </div>
+
+          <div class="event">
+            <div class="label">
+              <div class="ui label ribbon orange">3</div>
+            </div>
+            <div class="content">
+              <div class="summary">
+              </div>
+              <div class="extra text">
+                <strong>Лично поучаствовать</strong> в некоторых поведенческих экспериментах,
+                которые будут реализованы непосредственно в ходе занятия
+              </div>
+            </div>
+          </div>
+
+          <div class="event">
+            <div class="label">
+              <div class="ui label ribbon orange">4</div>
+            </div>
+            <div class="content">
+              <div class="summary">
+              </div>
+              <div class="extra text">
+                <strong>Узнать</strong> о прикладных аспектах поведенческой экономики в решении
+                актуальных проблем бизнеса и государственного управления
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="ui column">
+      <div class="ui basic segment">
+        <h2 class="ui header centered dividing">Дополнительно участники получат:</h2>
+        <div class="ui segment basic grid">
+          <div class="column four wide middle aligned center aligned">
+            <i class="ui big icon award orange"></i>
+          </div>
+          <div class="column twelve wide">
+            <p>подборку <strong>лучших статей</strong> по поведенческой экономике за последние 30 лет (более 150 стр. текста)</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="ui basic segment">
+        <h2 class="ui header centered dividing">Кому может быть интересно:</h2>
+
+        <div class="ui segment basic grid">
+          <div class="column four wide middle aligned center aligned">
+            <i class="ui big icon bullhorn orange"></i>
+          </div>
+          <div class="column twelve wide">
+            <p><strong>Специалистам в области рекламы и маркетинга</strong></p>
+          </div>
+        </div>
+
+        <div class="ui segment basic grid">
+          <div class="column four wide middle aligned center aligned">
+            <i class="ui big icon briefcase orange"></i>
+          </div>
+          <div class="column twelve wide">
+            <p><strong>Широким специалистам</strong></p>
+          </div>
+        </div>
+
+        <div class="ui segment basic grid">
+          <div class="column four wide middle aligned center aligned">
+            <i class="ui big icon comments dollar orange"></i>
+          </div>
+          <div class="column twelve wide">
+            <p><strong>Финансистам</strong></p>
+          </div>
+        </div>
+
+        <div class="ui segment basic grid">
+          <div class="column four wide middle aligned center aligned">
+            <i class="ui big icon project diagram orange"></i>
+          </div>
+          <div class="column twelve wide">
+            <p><strong>Проектным менеджерам</strong></p>
+          </div>
+        </div>
+
+        <div class="ui segment basic grid">
+          <div class="column four wide top aligned center aligned">
+            <i class="ui big icon user circle orange"></i>
+          </div>
+          <div class="column twelve wide">
+            <p>
+              <strong>Профессионалам</strong>,
+              интересующимся научными основами психологических аспектов принятия решений
+              для повышения их эффективности как в деловой среде, так и в личной жизни
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="ui vertical segment">
+  <div class="ui grid container stackable equal width">
+
+    <div class="column">
+      <div class="ui basic segment">
+        <h2 class="ui header centered dividing">Особенности курса:</h2>
+        <div class="ui bulleted list">
+          <p class="item">
+            <strong>Практическая ориентация</strong> курса - слушатели смогут сразу применять
+            полученные знания непосредственно для решения своих задач в рамках ежедневной работы;
+          </p>
+          <p class="item">
+            Современные технологии маркетинга и рекламы обладают огромным манипулятивным потенциалом,
+            основанном на различных поведенческих эвристиках.
+            В рамках курса мы научимся <strong>своевременно распознавать</strong> и избегать многих манипуляций;
+          </p>
+          <p class="item">
+            На основе достижений поведенческой экономики планируются и успешно
+            реализуются крупные бизнес-инициативы и государственные программы в США и странах ЕС.
+            Данный опыт заслуживает внимания, его можно <strong>успешно экстраполировать</strong> на свою профессиональную деятельность;
+          </p>
+          <p class="item">
+            Изучение поведенческой экономике позволит каждому <strong>по-новому взглянуть</strong>
+            на собственные психологические особенности принятия важнейших персональных решений
+            от рутинных решений по планированию личных финансов
+            до ключевых шагов в карьерном росте и управлении коллективом людей.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column middle aligned">
+      <div class="ui basic segment">
+        <img class="ui image" src="/images/bg-white.jpg">
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="ui vertical segment">
+  <div class="ui text container center aligned">
+    <svg class="ui image tiny" style="fill:#ffe100; " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 180">
+      <path d="M54.1 108c-.5 0-.9-.2-1.2-.6-.5-.7-.3-1.6.4-2.1 1.5-1 9.5-5.5 14.6-8.3-17.4-.5-31.3-7.3-41.3-20C9.9 55.7 9.5 24.2 14.2 3.7c.2-.8 1-1.3 1.8-1.1.8.2 1.3 1 1.1 1.8-4.6 19.9-4.2 50.3 11.8 70.8 9.5 12.2 23 18.6 39.9 18.9h.3l-3.2-4c-1.4-1.7-2.7-3.3-4.1-5.1-.7-.9-1.5-1.9-2.3-2.9-.5-.6-.4-1.6.2-2.1.6-.5 1.6-.4 2.1.2 0 0 0 .1.1.1l6.4 7.9c.5.6.9 1.1 1.4 1.7 1.5 1.8 3.1 3.6 4.3 5.5 0 .1.1.1.1.2.1.2.1.3.2.5v.3c0 .2 0 .3-.1.5 0 .1-.1.1-.1.2-.1.2-.2.3-.3.4-.1.1-.2.1-.3.2 0 0-.1 0-.2.1-.9.4-16 8.6-18.2 10.1-.4 0-.7.1-1 .1z"></path>
+    </svg>
+    <a class="ui request button orange centered">Сделать запрос</a>
+  </div>
+</div>

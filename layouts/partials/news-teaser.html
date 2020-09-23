@@ -1,0 +1,21 @@
+<div class="ui basic segment grid two columns">
+
+  <div class="column four wide">
+    <img class="ui image bordered small raised centered" src="{{ .image }}" alt="">
+  </div>
+
+  <div class="column twelve wide">
+    <h3 class="ui header">
+      <div class="ui sub header">
+        {{ .date.Format "2006-01-02" }}
+      </div>
+      {{ .title }}
+    </h3>
+    <p>
+      {{ .description }}
+    </p>
+    <a class="ui link" href="{{ .link }}">{{ .citation }}</a>
+    <br>
+  </div>
+
+</div>

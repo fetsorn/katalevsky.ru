@@ -1,0 +1,47 @@
+---
+label: news
+hide_body: false
+fields:
+- type: datetime
+  name: date
+  label: Date
+  default: now
+  config:
+    required: true
+- name: title
+  type: textarea
+  default: Заголовок новости
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Title
+- type: text
+  name: citation
+  label: Citation
+  default: 'Источник: '
+- type: text
+  name: link
+  label: Link
+  default: https://katalevsky.ru
+- type: file
+  name: image
+  label: Image
+pages:
+- content/news/33.md
+- content/news/evolving-toolbox-for-complex-project-management.md
+- content/news/financialization-of-the-food-value-chain-common-ownership-and-competition-law.md
+- content/news/it-covidtech.md
+- content/news/modeling-and-simulation-in-complex-project-management.md
+- content/news/визит-ирландской-делегации-в-сколтех.md
+- content/news/выступление-на-острове-нти.md
+- content/news/забава-для-чиновников-что-творится-в-особых-экономических-зонах.md
+- content/news/имитационное-моделирование-для-прогнозирования-развития-автомобильного-электротранспорта-на-уровне-региона.md
+- content/news/коронавирус-оставит-мир-без-хлебушка.md
+- content/news/круглый-стол-на-острове-нти.md
+- content/news/могучий-тор-территории-развития-оказались-эффективнее-оэз.md
+- content/news/новая-публикация.md
+- content/news/новости-ранхигс-доцент-ибда-ранхигс-стал-соавтором-вышедшего-в-сша-исследования.md
+- content/news/слишком-дальний-иностранные-инвесторы-не-спешат-вкладывать-в-дфо.md
+- content/news/ученых-просят-произвести-эффект-счетная-палата-раскритиковала-систему-финансирования-науки.md

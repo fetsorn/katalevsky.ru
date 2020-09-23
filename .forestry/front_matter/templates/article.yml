@@ -1,0 +1,62 @@
+---
+label: article
+hide_body: true
+fields:
+- name: title
+  type: textarea
+  default: ''
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Title
+- name: link
+  type: text
+  config:
+    required: false
+  label: Link
+- name: authors
+  type: text
+  config:
+    required: false
+  label: Authors
+- name: citation
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Citation
+- name: image
+  type: file
+  config:
+    maxSize: 64
+  label: Image
+- name: date
+  type: datetime
+  label: Date
+  description: ''
+  config:
+    required: true
+    date_format: 
+    time_format: 
+    display_utc: false
+  default: now
+pages:
+- content/articles/financialisation-of-the-food-value-chain-common-ownership-and-competition-law-1.md
+- content/articles/financialisation-of-the-food-value-chain-common-ownership-and-competition-law.md
+- content/articles/merger-activity-in-the-factors-of-production-segments-of-the-food-value-chain-a-critical-assessment-of-the-bayer-monsanto-merger.md
+- content/articles/modeling-and-simulation-toolset.md
+- content/articles/the-global-seed-market-competition-law-and-intellectual-property-rights-untying-the-gordian-knot.md
+- content/articles/динамический-бизнес-план-новый-подход-к-бизнес-планированию-на-основе-агентного-имитационного-моделирования.md
+- content/articles/имитационное-моделирование-для-прогнозирования-развития-автомобильного-электротранспорта-на-уровне-региона.md
+- content/articles/моделирование-поведения-потребителей.md
+- content/articles/обобщение-опыта-преподавания-основ-системного-анализа-и-имитационного-моделирования-для-студентов-гуманитарных-факультетов.md
+- content/articles/применение-имитационного-моделирования-при-управлении-комплексными-проектами.md
+- content/articles/рынок-семян-глобализация-конкуренция-и-интеллектуальная-собственность.md
+- content/articles/стратегические-когнитивные-карты-в-управлении-сложными-системами-теория-и-практика.md
+- content/articles/управление-ростом-организации-на-основе-системно-динамического-подхода.md
+- content/articles/эволюция-концепций-стратегического-менеджмента-от-гарвардской-школы-внешней-среды-до-ресурсного-подхода-к-управлению.md

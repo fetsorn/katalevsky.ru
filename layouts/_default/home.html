@@ -1,0 +1,412 @@
+{{ define "main" }}
+  <script>
+$(document)
+    .ready(function() {
+$('.request.modal')
+    .modal('attach events', '.request.button', 'show')
+;
+
+$('.request.modal').modal({
+    onApprove : function() {
+        //Submits the semantic ui form
+        //And pass the handling responsibilities to the form handlers,
+        // e.g. on form validation success
+        $('.request.form').submit();
+        //Return false as to not close modal dialog
+        return false;
+    }
+});
+
+var formValidationRules =
+    {
+        name: {
+            identifier  : 'name',
+            rules: [
+                {
+                    type   : 'empty',
+                },
+            ]
+        },
+        email: {
+            identifier  : 'email',
+            rules: [
+                {
+                    type   : 'email',
+                },
+            ]
+        },
+    }
+
+var formSettings =
+    {
+        onSuccess : function()
+        {
+            //Hides modal on validation success
+            $('.request.modal').modal('hide');
+        }
+    }
+
+$('.request.form').form(formValidationRules, formSettings);
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbw-nOO_Dvkfp0QkjwuEzMeZKM_J2wuclJDvuLEcurY3n2Jv77Q/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+    })
+  </script>
+
+<!-- Popups -->
+<div class="myPopup">
+<div class="ui toc segment basic inverted fluid fixed sticky" id="tocPopup">
+  <div class="ui container grid padded two columns">
+    <div class="row">
+      <div class="column">
+        <a class="ui inverted header" href="/">КАТАЛЕВСКИЙ</a>
+      </div>
+      <div class="column right aligned">
+        <div class="ui inverted link list">
+          <a class="item" onclick="popPopupUp()"><i class="popup__close times icon"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <h4 class="ui inverted header">Курсы</h4>
+        <div class="ui inverted link list">
+          <a class="item" href="/system">Системный анализ</a>
+          <a class="item" href="/behavior">Поведенческая экономика</a>
+          <a class="item" href="/startup">Игра "Стартап"</a>
+          <a class="item" href="/restaurants">Игра "Ресторатор"</a>
+        </div>
+      </div>
+      <div class="column">
+        <h4 class="ui inverted header">Публикации</h4>
+        <div class="ui inverted link list">
+          <a class="item" href="/articles">Статьи</a>
+          <a class="item" href="/reports">Доклады</a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <h4 class="ui inverted header">Книги</h4>
+        <div class="ui inverted link list">
+          <a class="item" href="/books#book-model">Основы имитационного моделирования</a>
+          <a class="item" href="/books#book-agro">Современные агротехнологии</a>
+        </div>
+      </div>
+      <div class="column">
+        <h4 class="ui inverted header">Обо мне</h4>
+        <div class="ui inverted link list">
+          <a class="item" href="/bio">Биография</a>
+          <a class="item" href="/news">Новости</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="ui main menu fixed large sticky inverted">
+  <a class="logo item header" href="/">КАТАЛЕВСКИЙ</a>
+  <div class="right full menu">
+    <div class="ui menu__courses full item dropdown">
+      Курсы
+      <i class="dropdown icon"></i>
+      <div class="menu">
+        <a class="item" href="/system">Системный анализ</a>
+        <a class="item" href="/behavior">Принятие решений</a>
+        <a class="item" href="/startup">Игра "Стартап"</a>
+        <a class="item" href="/restaurants">Игра "Ресторатор"</a>
+      </div>
+    </div>
+    <a class="ui menu__books full item" href="/books">Книги</a>
+    <a class="ui menu__articles full item" href="/articles">Статьи</a>
+    <a class="ui menu__reports full item" href="/reports">Доклады</a>
+    <a class="ui menu__bio full item" href="/bio">Био</a>
+    <a class="ui menu__news full item" href="/news">Новости</a>
+    <a class="toc item" onclick="popPopupUp()">
+      <i class="sidebar icon"></i>
+    </a>
+  </div>
+</div>
+<div class="ui request modal">
+  <i class="close icon"></i>
+  <div class="header">Запросить информацию</div>
+  <form name="submit-to-google-sheet" action="" class="ui request form content error">
+    <div class="required field">
+      <label>Как к вам обращаться?</label>
+      <input type="text" name="name" placeholder="Не заполнено">
+    </div>
+    <div class="required field">
+      <label>Адрес электронной почты</label>
+      <input type="text" name="email" placeholder="Не заполнено">
+    </div>
+    <button class="ui request_submit ok button">Подать заявку</button>
+    <p>Нажимая на эту кнопку вы соглашаетесь с <a class="ui link" href="#">Политикой конфиденциальности</a></p>
+  </form>
+</div>
+<div class="ui segment basic"></div>
+<div class="ui vertical segment">
+  <div class="ui text container">
+    <img class="ui small image circular centered" src="/images/avatar-small-soil.png">
+    <h3 class="ui header centered">
+      <a href="https://www.facebook.com/dkatalevsky"><i class="ui facebook icon large"></i></a>
+      <a href="https://ru.linkedin.com/in/katalevsky"><i class="ui linkedin icon large"></i></a>
+    </h3>
+    <div class="ui segment padded">
+      <h2 class="ui header centered dividing ">Дмитрий Каталевский</h2>
+      <p>Параллельно <a class="ui link" href="https://www.skoltech.ru/o-nas/uchenyj-sovet/komitety-uchenogo-soveta/" target="_blank">основной работе</a> преподаю авторские курсы по различным управленческим тематикам
+        (<a class="ui link" href="/system">системный анализ</a>, <a class="ui link" href="/behavior">управленческое мышление</a>,
+        <a class="ui link" href="/behavior">поведенческая экономика</a>, <a class="ui link" href="/startup">управление стартапом</a> и др.).
+        Автор популярного <a class="ui link" href="/books">учебника по имитационному моделированию</a> для специалистов по управлению
+        и имитационной бизнес-игры <a class="ui link" href="/startup">«Стартап: пределы роста»</a> по управлению инновационной высокотехнологичной компанией.
+      </p>
+    </div>
+  </div>
+</div>
+<div class="ui vertical segment">
+  <div class="ui grid stackable container">
+
+    <div class="six wide top aligned column">
+      <div class="ui basic segment">
+        <h2 class="ui header">Новости
+          <div class="sub header"></div></h2>
+        <p>Недавние события моей профессиональной жизни</p>
+        <br>
+      <a class="ui basic button" href="/news">Ещё новости...</a>
+      </div>
+    </div>
+
+    <div class="ten wide column">
+{{ range first 2 (where .Site.RegularPages "Section" "news").ByDate.Reverse }}
+{{ partial "news-teaser.html" .Params }}
+{{ end }}
+    </div>
+
+  </div>
+</div>
+<div class = "ui vertical segment">
+  <div class = "ui stackable two column grid container">
+
+    <div class = "six wide top aligned column">
+      <div class = "ui basic segment">
+        <h2 class ="ui header">Курсы
+          <div class = "sub header"></div></h2>
+        <p>В этом разделе представлены курсы для корпоративных слушателей, а также ВУЗов и образовательных центров, в которых я преподаю</p>
+        <p>Если Вы заинтересовались каким-либо курсом и желаете стать участником тренинга либо заказать мероприятие, пожалуйста, напишите мне</p>
+      </div>
+    </div>
+
+    <div class = "ten wide column">
+      <div class="ui basic segment grid two columns">
+
+        <div class="column four wide">
+	      <img class = "ui image" src="/images/behavior-cover-green.png">
+	    </div>
+
+        <div class="column twelve wide">
+	      <h5 class="ui header">
+            Поведенческая экономика в действии
+            <div class = "sub header">
+              практический курс по принятию решений
+            </div>
+          </h5>
+	      <a class="ui small padded button" href="/behavior">
+            Подробнее <i class="ui icon small arrow circle right"></i>
+          </a>
+	      <a class="orange ui small request button">
+            Запрос на курс <i class="ui icon small arrow circle right"></i>
+          </a>
+	      <br>
+          <br>
+          <p>
+            Накопленные за последние 30 лет достижения поведенческой экономики имеют
+            высокое прикладное значение не только для менеджеров среднего и высшего звена,
+            но и для всех тех, кто заинтересован в принятии собственных максимально эффективных решений.
+          </p>
+	    </div>
+
+      </div>
+      <div class="ui basic segment grid two columns">
+
+        <div class="column four wide">
+	      <img class = "ui image" src="/images/system-cover-soil.png">
+	    </div>
+
+        <div class="column twelve wide">
+	      <h5 class="ui header">
+            Системный анализ и управленческое мышление
+          </h5>
+	      <a class="ui small center aligned button" href="/system">
+            Подробнее <i class="ui icon small arrow circle right"></i>
+          </a>
+	      <a class="orange ui small center aligned request button">
+            Запрос на курс <i class="ui icon small arrow circle right"></i>
+          </a>
+          <br>
+          <br>
+          <p>
+            В основе курса - многолетний опыт преподавания авторского курса на программах MBA и Executive MBA в ИБДА РАНХиГС.
+            Курс включает в себя несколько дисциплин (системный анализ, управление проектами, экономика идентичности, менеджмент),
+            а также оригинальную авторскую методологию, объединившую инструментарий имитационного моделирования и системной динамики,
+            ТРИЗ и мои ряд моих собственных наработок.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="ui basic segment grid two columns">
+
+        <div class="column four wide">
+	      <img class = "ui image" src="/images/startup-cover-rust.png">
+	    </div>
+
+        <div class="column twelve wide">
+	      <h5 class="ui header">
+            Игра "Стартап"
+          </h5>
+	      <a class="ui small center aligned button" href="/startup">
+            Подробнее <i class="ui icon small arrow circle right"></i>
+          </a>
+	      <a class="orange ui small center aligned request button">
+            Запрос на курс <i class="ui icon small arrow circle right"></i>
+          </a>
+          <br>
+          <br>
+          <p>
+            Игра «Стартап: пределы роста» с успехом использовалась на программах ведущих российских бизнес-школ,
+            включая программы MBA/ Executive MBA РАНХиГС, Стартап-Академии Московской бизнес-школы Сколково,
+            на экономическом факультете МГУ им. М.В. Ломоносова, в образовательной программе Открытого университета Сколково (ОтУС) и др.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="ui basic segment grid two columns">
+
+        <div class="column four wide">
+	      <img class = "ui image" src="/images/restaurants-cover.png">
+	    </div>
+
+        <div class="column twelve wide">
+	      <h5 class="ui header">
+            Игра "Ресторатор"
+          </h5>
+	      <a class="ui small center aligned button" href="/restaurants">
+            Подробнее <i class="ui icon small arrow circle right"></i>
+          </a>
+	      <a class="orange ui small center aligned request button">
+            Запрос на курс <i class="ui icon small arrow circle right"></i>
+          </a>
+          <br>
+          <br>
+          <p>
+            Деловая игра "Ресторатор" представляет собой имитационный тренажер по развитию
+            навыков стратегического управления, системного мышления и принятия
+            управленческих решений в динамически сложной среде (dynamic decision-making).
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="ui vertical segment">
+  <div class="ui grid container stackable equal width">
+    <div class="column"><img class="ui small image centered" src="/images/partners-ibda.png"></div>
+    <div class="column"><img class="ui small image centered" src="/images/partners-bhsad.png"></div>
+    <div class="column"><img class="ui small image centered" src="/images/partners-ranhigs.png"></div>
+    <div class="column"><img class="ui small image centered" src="/images/partners-emsu.png"></div>
+    <div class="column"><img class="ui small image centered" src="/images/partners-otus.gif"></div>
+  </div>
+</div>
+
+<div class="ui vertical segment">
+  <div class="ui stackable two column grid container">
+
+    <div class="six wide top aligned column">
+      <div class="ui basic segment">
+        <h2 class="ui header">Книги
+          <div class="sub header">за моим авторством</div></h2>
+        <p>Книжные издания можно приобрести в интернет-магазинах или скачать на сайте при регистрации</p>
+        <br>
+      </div>
+    </div>
+
+    <div class="ten wide column">
+      <div class="ui basic segment grid two columns">
+
+        <div class="column four wide">
+	      <img class = "ui image" src="/images/book-model.png">
+	    </div>
+
+        <div class="column twelve wide">
+	      <h5 class="ui header">
+            Основы имитационного моделирования и системного анализа в управлении
+            <div class = "sub header">
+              учебное пособие
+            </div>
+          </h5>
+	      <a class = "ui small padded button" href="/books#book-model">
+            Подробнее <i class="ui icon small arrow circle right"></i>
+          </a>
+	      <a class = "orange ui small button" href="https://drive.google.com/open?id=18TAwT7EUMzhIzLQzeiFsnRt3R-mKz3FQ" target="_blank">
+            Скачать <i class="ui icon small arrow circle right"></i>
+          </a>
+	      <br>
+          <br>
+          <p>
+            Книга задумана как учебное пособие для широкого круга читателей, интересующихся новейшими
+            достижениями в области имитационного моделирования применительно к проблемам управления.
+            Учебное пособие состоит из двух частей: в первой части дана теория принятия решений
+            в динамически сложной среде, описаны феномены контр-интуитивного и «возникающего» (emerging)
+            поведения сложных систем.
+            Во второй части учебного пособия собраны практические кейсы применения системной
+            динамики и агентного моделирования к проблемам бизнеса и государственного управления.
+          </p>
+	    </div>
+
+      </div>
+      <div class="ui basic segment grid two columns">
+
+        <div class="column four wide">
+	      <img class = "ui image" src="/images/book-agro.png">
+	    </div>
+
+        <div class="column twelve wide">
+	      <h5 class="ui header">
+            Современные агротехнологии
+            <div class = "sub header">
+              Экономико-правовые и регуляторные аспекты
+          </div>
+          </h5>
+	      <a class = "ui small center aligned button" href="/books#book-agro">
+            Подробнее <i class="ui icon small arrow circle right"></i>
+          </a>
+	      <a class = "orange ui small center aligned button" href="https://drive.google.com/open?id=1dG1yEEzqZbUFetS1Ll3Yq77Um3lCzkYy" target="_blank">
+            Скачать <i class="ui icon small arrow circle right"></i>
+          </a>
+          <br>
+          <br>
+          <p>
+            Монография рассчитана на широкий круг лиц, интересующихся технологическими,
+            экономическими и регуляторно-правовыми аспектами современных сельскохозяйственных
+            технологий, и может быть полезна лицам, принимающим решения в области выработки
+            практической и научной сельскохозяйственной политики России.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+{{ end }}

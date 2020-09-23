@@ -1,0 +1,18 @@
+{
+  "name": "katalevsky.ru",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "/Users/fetsorn/mm/websites/katalevsky.ru"
+  },
+  "author": "Anton Davydov",
+  "license": "ISC",
+  "dependencies": {
+    "fomantic-ui": "^2.8.7"
+  }
+}

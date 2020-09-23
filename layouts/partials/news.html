@@ -1,0 +1,19 @@
+<div class="ui vertical segment">
+  <div class="ui grid container two columns stackable">
+    <div class="ui column">
+      <img class="ui image bordered large raised centered" src='{{ $.Param "image" }}' alt="">
+    </div>
+    <div class="ui column middle aligned">
+      <h1 class="ui header">
+        <div class="ui sub header">
+          {{ dateFormat "2006-01-02" ($.Param "date") }}
+        </div>
+        {{ $.Param "title" }}
+      </h1>
+      <p>
+        {{ .Content }}
+      </p>
+      <a class="ui link" href='{{ $.Param "link" }}'>{{ $.Param "citation" }}</a>
+    </div>
+  </div>
+</div>

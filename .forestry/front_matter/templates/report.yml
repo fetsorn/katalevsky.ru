@@ -1,0 +1,40 @@
+---
+label: report
+hide_body: false
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+- name: link
+  type: text
+  config:
+    required: false
+  label: Link
+- name: image-a
+  type: file
+  config:
+    maxSize: 64
+  label: Image-A
+- name: image-b
+  type: file
+  config:
+    maxSize: 64
+  label: Image-B
+- name: date
+  type: datetime
+  label: Date
+  description: ''
+  config:
+    required: true
+    date_format: 
+    time_format: 
+    display_utc: false
+  default: now
+pages:
+- content/reports/2.0.md
+- content/reports/имитационные-игры-в-обучении-управлению-на-примере-тренажёра-стартап-пределы-роста.md
+- content/reports/оценка-венчурных-проектов-на-основе-динамического-бизнес-плана.md
+- content/reports/применение-инструментария-причинно-следственных-диаграмм-при-анализе-сложных-социально-экономических-систем.md
+- content/reports/санкции-системный-анализ-последствий.md

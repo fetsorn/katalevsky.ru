@@ -1,0 +1,16 @@
+<div class="column">
+  <div class="ui segment basic">
+    <img class="ui image" src='{{ .Param "image-a" }}'>
+    <img class="ui image" src='{{ .Param "image-b" }}'>
+  </div>
+</div>
+
+<div class="column">
+  <div class="ui segment basic">
+    <h2 class="ui header">{{ .Param "title" }}</h2>
+    <a target="_blank" href='{{ .Param "link" }}' class="ui button orange">Скачать</a>
+    <br>
+    <br>
+    <p class="ui text">{{ .Content }}</p>
+  </div>
+</div>
