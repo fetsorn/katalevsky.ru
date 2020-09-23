@@ -2727,7 +2727,7 @@ $(document)
 #+BEGIN_SRC html :noweb tangle :tangle ../layouts/news/list.html
 {{ define "main" }}
   <div class="ui segment basic"></div>
-  {{ range where .Site.RegularPages "Section" "news"}}
+  {{ range .Pages }}
     {{ partial "news.html" . }}
   {{ end }}
 {{ end }}
@@ -2835,9 +2835,11 @@ $(document)
 
   <div class="column twelve wide">
      <h5 class="ui header">{{ .Title }}</h5>
-     <a target="_blank" data-href=' {{ .Param "link" }} ' class="orange ui small center aligned request button" onclick="currentEl=this.getAttribute('data-href');">
-          Скачать статью <i class="ui icon small arrow circle right"></i>
-     </a>
+     {{ with .Param "link" }}
+        <a target="_blank" data-href=' {{ . }} ' class="orange ui small center aligned request button" onclick="currentEl=this.getAttribute('data-href');">
+             Скачать статью <i class="ui icon small arrow circle right"></i>
+        </a>
+     {{ end }}
      <br>
      <br>
      <p><em>{{ .Param "authors" }}</em></p>
@@ -2845,7 +2847,6 @@ $(document)
   </div>
 </div>
 #+END_SRC
-
 ** report-partial
 #+NAME: report-partial
 #+BEGIN_SRC html :noweb tangle :tangle ../layouts/partials/report.html

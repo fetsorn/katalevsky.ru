@@ -6,9 +6,11 @@
 
   <div class="column twelve wide">
      <h5 class="ui header">{{ .Title }}</h5>
-     <a target="_blank" data-href=' {{ .Param "link" }} ' class="orange ui small center aligned request button" onclick="currentEl=this.getAttribute('data-href');">
-          Скачать статью <i class="ui icon small arrow circle right"></i>
-     </a>
+     {{ with .Param "link" }}
+        <a target="_blank" data-href=' {{ . }} ' class="orange ui small center aligned request button" onclick="currentEl=this.getAttribute('data-href');">
+             Скачать статью <i class="ui icon small arrow circle right"></i>
+        </a>
+     {{ end }}
      <br>
      <br>
      <p><em>{{ .Param "authors" }}</em></p>

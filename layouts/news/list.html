@@ -1,6 +1,6 @@
 {{ define "main" }}
   <div class="ui segment basic"></div>
-  {{ range where .Site.RegularPages "Section" "news"}}
+  {{ range .Pages }}
     {{ partial "news.html" . }}
   {{ end }}
 {{ end }}
