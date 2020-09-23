@@ -753,7 +753,7 @@ $('.request.form').form(formValidationRules, formSettings);
 	      <a class = "ui small padded button" href="/books#book-model">
             Подробнее <i class="ui icon small arrow circle right"></i>
           </a>
-	      <a class = "orange ui small button" href="https://drive.google.com/open?id=18TAwT7EUMzhIzLQzeiFsnRt3R-mKz3FQ" target="_blank">
+	      <a class = "orange ui small button" href="https://drive.google.com/file/d/1sVOlp3KMBf-3FNAY7VfAfDDjz_960hew/view?usp=sharing" target="_blank">
             Скачать <i class="ui icon small arrow circle right"></i>
           </a>
 	      <br>
@@ -786,7 +786,7 @@ $('.request.form').form(formValidationRules, formSettings);
 	      <a class = "ui small center aligned button" href="/books#book-agro">
             Подробнее <i class="ui icon small arrow circle right"></i>
           </a>
-	      <a class = "orange ui small center aligned button" href="https://drive.google.com/open?id=1dG1yEEzqZbUFetS1Ll3Yq77Um3lCzkYy" target="_blank">
+	      <a class = "orange ui small center aligned button" href="https://drive.google.com/file/d/1xzYRRLhhZryLLA3ye3iGq0nhdJt3F8zZ/view?usp=sharing" target="_blank">
             Скачать <i class="ui icon small arrow circle right"></i>
           </a>
           <br>
@@ -1539,7 +1539,7 @@ $('.definition.sticky')
           Имитационная модель-тренажер по развитию иновационного стартапа
         </h2>
         <div class="ui segment basic center aligned">
-          <a class="ui button violet centered" target="_blank" href="https://drive.google.com/open?id=1DbMLI7ChEDG82gfc0GyiJj3sDaOo4CDB">Скачать инструкцию</a>
+          <a class="ui button violet centered" target="_blank" href="https://drive.google.com/file/d/1CUYOJNNcc52kJ8Q474mOgLI-pWB96i4G/view?usp=sharing">Скачать инструкцию</a>
           <a class="ui request button orange centered">Запросить информацию</a>
         </div>
         <div class="ui segment basic">
@@ -2032,7 +2032,7 @@ $('.certificate.modal')
         Основы имитационного моделирования и системного анализа в управлении
         <div class="ui sub header">Учебное пособие</div>
       </h2>
-      <a class="ui request button orange" data-href="https://drive.google.com/open?id=18TAwT7EUMzhIzLQzeiFsnRt3R-mKz3FQ" target="_blank" onclick="currentEl=this.getAttribute('data-href');">Скачать</a>
+      <a class="ui request button orange" data-href="https://drive.google.com/file/d/1sVOlp3KMBf-3FNAY7VfAfDDjz_960hew/view?usp=sharing" target="_blank" onclick="currentEl=this.getAttribute('data-href');">Скачать</a>
       <p>
         Книга задумана как учебное пособие для широкого круга читателей,
         интересующихся новейшими достижениями в области имитационного
@@ -2119,7 +2119,7 @@ $('.certificate.modal')
         Современные агротехнологии
         <div class="ui sub header">Экономико-правовые и регуляторные аспекты</div>
       </h2>
-      <a class="ui request button orange" data-href="https://drive.google.com/open?id=1dG1yEEzqZbUFetS1Ll3Yq77Um3lCzkYy" target="_blank" onclick="currentEl=this.getAttribute('data-href');">Скачать</a>
+      <a class="ui request button orange" data-href="https://drive.google.com/file/d/1xzYRRLhhZryLLA3ye3iGq0nhdJt3F8zZ/view?usp=sharing" target="_blank" onclick="currentEl=this.getAttribute('data-href');">Скачать</a>
       <p>
         Cельское хозяйство cтремительно технологизируется, и новые технологии
         кардинально перекраивают ландшафт отрасли. Подрывные сельскохозяйственные
@@ -2212,7 +2212,7 @@ $('.certificate.modal')
         <h2 class="ui header">
           Сколтех: опыт проведения хакатонов и обучения предпринимательству
         </h2>
-        <a target="_blank" href="https://drive.google.com/open?id=0B5nkpDPi-LNvYVlwMG9NOUFPU0ZTTEFkQ2VSMVB1WEtSMDhB" class="ui button orange">Скачать</a>
+        <a target="_blank" href="https://drive.google.com/file/d/1rh6Cf_oU9DD_vo26WFgsC9iTlw_XF3Ct/view?usp=sharing" class="ui button orange">Скачать</a>
         <br>
         <br>
         <p class="ui text">
@@ -2245,7 +2245,7 @@ $('.certificate.modal')
         <h2 class="ui header">
           Университет 2.0: управление портфелем технологических компетенций
         </h2>
-        <a target="_blank" href="https://drive.google.com/open?id=1apJo4vkJ0xmLSxgqMFGMcG2D2BD21ySv" class="ui button orange">Скачать</a>
+        <a target="_blank" href="https://drive.google.com/file/d/1NExC2uOnvHugvoNmhWA0l3ATBaWcxDnC/view?usp=sharing" class="ui button orange">Скачать</a>
         <br>
         <br>
         <p class="ui text">
@@ -2283,7 +2283,7 @@ $('.certificate.modal')
         <h2 class="ui header">
           Имитационные игры в обучении управлению на примере тренажёра "Стартап: пределы роста"
         </h2>
-        <a target="_blank" href="https://drive.google.com/open?id=1FPsl34o7HGZG3eJs8qQ2SR60ffrYFlcI" class="ui button orange">Скачать</a>
+        <a target="_blank" href="https://drive.google.com/file/d/1SQGxUSyilobJ0PdktZWB_2j2FKMY5Pgv/view?usp=sharing" class="ui button orange">Скачать</a>
         <br>
         <br>
         <p class="ui text">
@@ -2316,7 +2316,7 @@ $('.certificate.modal')
         <h2 class="ui header">
           Оценка венчурных проектов на основе "динамического бизнес-плана"
         </h2>
-        <a target="_blank" href="https://drive.google.com/open?id=1LXudiD503wmi_IgZnaNkfSJECRiAwcyK" class="ui button orange">Скачать</a>
+        <a target="_blank" href="https://drive.google.com/file/d/1CEnqPXxZldX_G5E8eDiEl2Cve-hnPCjv/view?usp=sharing" class="ui button orange">Скачать</a>
         <br>
         <br>
         <p>
@@ -2347,7 +2347,7 @@ $('.certificate.modal')
         <h2 class="ui header">
           Санкции: системный анализ последствий
         </h2>
-        <a target="_blank" href="https://drive.google.com/open?id=1lBMxZxvKV_-jKp7pR4iS5v1rUdWDtrAs" class="ui button orange">Скачать</a>
+        <a target="_blank" href="https://drive.google.com/file/d/1Ku0XOvozAWedPtlzafuyfbI3wKYLE_lM/view?usp=sharing" class="ui button orange">Скачать</a>
         <br>
         <br>
         <p>
@@ -2380,7 +2380,7 @@ $('.certificate.modal')
         <h2 class="ui header">
           Применение инструментария причинно-следственных диаграмм при анализе сложных социально-экономических систем
         </h2>
-        <a target="_blank" href="https://drive.google.com/open?id=1SuAJzRIIknOm-J_s3QpdBR0fWmkMIL9c" class="ui button orange">Скачать</a>
+        <a target="_blank" href="https://drive.google.com/file/d/16g_GSpKaQvk-LHVCm5FZ24s_6e-lKOyO/view?usp=sharing" class="ui button orange">Скачать</a>
         <br>
         <br>
         <p>
