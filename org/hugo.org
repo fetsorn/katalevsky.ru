@@ -592,7 +592,7 @@ $('.request.form').form(formValidationRules, formSettings);
       <div class="ui basic segment grid two columns">
 
         <div class="column four wide">
-	      <img class = "ui image" src="/images/behavior-cover-green.png">
+	      <img class = "ui image" src="/images/behavior-brain-shape.png">
 	    </div>
 
         <div class="column twelve wide">
@@ -621,7 +621,7 @@ $('.request.form').form(formValidationRules, formSettings);
       <div class="ui basic segment grid two columns">
 
         <div class="column four wide">
-	      <img class = "ui image" src="/images/system-cover-soil.png">
+	      <img class = "ui image" src="/images/system-thinking.png">
 	    </div>
 
         <div class="column twelve wide">
@@ -649,7 +649,7 @@ $('.request.form').form(formValidationRules, formSettings);
       <div class="ui basic segment grid two columns">
 
         <div class="column four wide">
-	      <img class = "ui image" src="/images/startup-cover-rust.png">
+	      <img class = "ui image" src="/images/startup-guide.png">
 	    </div>
 
         <div class="column twelve wide">
@@ -676,7 +676,7 @@ $('.request.form').form(formValidationRules, formSettings);
       <div class="ui basic segment grid two columns">
 
         <div class="column four wide">
-	      <img class = "ui image" src="/images/restaurants-cover.png">
+	      <img class = "ui image" src="/images/restaurants-guide.png">
 	    </div>
 
         <div class="column twelve wide">
@@ -1555,7 +1555,7 @@ $('.definition.sticky')
     </div>
     <div class="ui column center aligned">
       <div>
-        <img class="ui image medium centered" src="/images/startup-cover-rust.png">
+        <img class="ui image large centered" src="/images/startup-guide.png">
       </div>
       <br>
     </div>
@@ -1990,7 +1990,7 @@ $('.certificate.modal')
     </div>
     <div class="ui column center aligned">
       <div>
-        <img class="ui image large centered" src="/images/restaurants-coverscreen.png">
+        <img class="ui image large centered" src="/images/restaurants-guide.png">
       </div>
       <br>
     </div>
