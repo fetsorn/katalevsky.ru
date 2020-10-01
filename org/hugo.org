@@ -753,7 +753,7 @@ $('.request.form').form(formValidationRules, formSettings);
 	      <a class = "ui small padded button" href="/books#book-model">
             Подробнее <i class="ui icon small arrow circle right"></i>
           </a>
-	      <a class = "orange ui small button" href="https://drive.google.com/file/d/1sVOlp3KMBf-3FNAY7VfAfDDjz_960hew/view?usp=sharing" target="_blank">
+	      <a class = "orange ui small button" href="/images/book-sys.pdf" target="_blank">
             Скачать <i class="ui icon small arrow circle right"></i>
           </a>
 	      <br>
@@ -786,7 +786,7 @@ $('.request.form').form(formValidationRules, formSettings);
 	      <a class = "ui small center aligned button" href="/books#book-agro">
             Подробнее <i class="ui icon small arrow circle right"></i>
           </a>
-	      <a class = "orange ui small center aligned button" href="https://drive.google.com/file/d/1xzYRRLhhZryLLA3ye3iGq0nhdJt3F8zZ/view?usp=sharing" target="_blank">
+	      <a class = "orange ui small center aligned button" href="/images/book-agro.pdf" target="_blank">
             Скачать <i class="ui icon small arrow circle right"></i>
           </a>
           <br>
@@ -1539,7 +1539,7 @@ $('.definition.sticky')
           Имитационная модель-тренажер по развитию иновационного стартапа
         </h2>
         <div class="ui segment basic center aligned">
-          <a class="ui button violet centered" target="_blank" href="https://drive.google.com/file/d/1CUYOJNNcc52kJ8Q474mOgLI-pWB96i4G/view?usp=sharing">Скачать инструкцию</a>
+          <a class="ui button violet centered" target="_blank" href="/images/startup-guide.pdf">Скачать инструкцию</a>
           <a class="ui request button orange centered">Запросить информацию</a>
         </div>
         <div class="ui segment basic">
@@ -1975,7 +1975,7 @@ $('.certificate.modal')
         </h2>
         <div class="ui segment basic center aligned">
           <a class="ui button violet centered" target="_blank" href="https://cloud.anylogic.com/model/0907c499-17a2-4acd-baa6-1eaa8f4d715f?mode=SETTINGS">Пробная версия</a>
-          <a class="ui button blue centered" target="_blank" href="https://yadi.sk/i/ehvpAtkLa3L-JA">Инструкция</a>
+          <a class="ui button blue centered" target="_blank" href="/images/restaurants-guide.pdf">Инструкция</a>
           <a class="ui request button orange centered">Запросить информацию</a>
         </div>
         <div class="ui segment basic">
@@ -2032,7 +2032,7 @@ $('.certificate.modal')
         Основы имитационного моделирования и системного анализа в управлении
         <div class="ui sub header">Учебное пособие</div>
       </h2>
-      <a class="ui request button orange" data-href="https://drive.google.com/file/d/1sVOlp3KMBf-3FNAY7VfAfDDjz_960hew/view?usp=sharing" target="_blank" onclick="currentEl=this.getAttribute('data-href');">Скачать</a>
+      <a class="ui request button orange" data-href="/images/book-sys.pdf" target="_blank" onclick="currentEl=this.getAttribute('data-href');">Скачать</a>
       <p>
         Книга задумана как учебное пособие для широкого круга читателей,
         интересующихся новейшими достижениями в области имитационного
@@ -2119,7 +2119,7 @@ $('.certificate.modal')
         Современные агротехнологии
         <div class="ui sub header">Экономико-правовые и регуляторные аспекты</div>
       </h2>
-      <a class="ui request button orange" data-href="https://drive.google.com/file/d/1xzYRRLhhZryLLA3ye3iGq0nhdJt3F8zZ/view?usp=sharing" target="_blank" onclick="currentEl=this.getAttribute('data-href');">Скачать</a>
+      <a class="ui request button orange" data-href="/images/book-agro.pdf" target="_blank" onclick="currentEl=this.getAttribute('data-href');">Скачать</a>
       <p>
         Cельское хозяйство cтремительно технологизируется, и новые технологии
         кардинально перекраивают ландшафт отрасли. Подрывные сельскохозяйственные
