@@ -11,16 +11,16 @@ fields:
     schema:
       format: markdown
   label: Title
-- name: link
-  type: text
-  config:
-    required: false
-  label: Link
 - name: authors
   type: text
   config:
     required: false
   label: Authors
+- name: link
+  type: file
+  config:
+    maxSize: 64
+  label: Link
 - name: citation
   type: textarea
   default: ''
