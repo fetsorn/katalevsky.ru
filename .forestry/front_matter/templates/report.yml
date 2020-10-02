@@ -8,9 +8,9 @@ fields:
     required: true
   label: Title
 - name: link
-  type: text
+  type: file
   config:
-    required: false
+    maxSize: 64
   label: Link
 - name: image-a
   type: file
