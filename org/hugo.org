@@ -211,7 +211,7 @@ function popPopupUp() {
           <a class="item" href="/system">Системный анализ</a>
           <a class="item" href="/behavior">Поведенческая экономика</a>
           <a class="item" href="/startup">Игра "Стартап"</a>
-          <a class="item" href="/restaurants">Игра "Ресторатор"</a>
+          <a class="item" href="/restaurants">Игра "Ресторанный бизнес"</a>
         </div>
       </div>
       <div class="column">
@@ -255,7 +255,7 @@ function popPopupUp() {
         <a class="item" href="/system">Системный анализ</a>
         <a class="item" href="/behavior">Принятие решений</a>
         <a class="item" href="/startup">Игра "Стартап"</a>
-        <a class="item" href="/restaurants">Игра "Ресторатор"</a>
+        <a class="item" href="/restaurants">Игра "Ресторанный бизнес"</a>
       </div>
     </div>
     <a class="ui menu__books full item" href="/books">Книги</a>
@@ -296,7 +296,7 @@ function popPopupUp() {
         <a href="/system" class="item">Системный анализ</a>
         <a href="/behavior" class="item">Поведенческая экономика</a>
         <a href="/startup" class="item">Игра "Стартап"</a>
-        <a href="/restaurants" class="item">Игра "Ресторатор"</a>
+        <a href="/restaurants" class="item">Игра "Ресторанный бизнес"</a>
       </div>
     </div>
 
@@ -681,7 +681,7 @@ $('.request.form').form(formValidationRules, formSettings);
 
         <div class="column twelve wide">
 	      <h5 class="ui header">
-            Игра "Ресторатор"
+            Игра "Ресторанный бизнес"
           </h5>
 	      <a class="ui small center aligned button" href="/restaurants">
             Подробнее <i class="ui icon small arrow circle right"></i>
@@ -692,7 +692,7 @@ $('.request.form').form(formValidationRules, formSettings);
           <br>
           <br>
           <p>
-            Деловая игра "Ресторатор" представляет собой имитационный тренажер по развитию
+            Деловая игра "Ресторанный бизнес" представляет собой имитационный тренажер по развитию
             навыков стратегического управления, системного мышления и принятия
             управленческих решений в динамически сложной среде (dynamic decision-making).
           </p>
@@ -1980,9 +1980,9 @@ $('.certificate.modal')
         </div>
         <div class="ui segment basic">
           <div class="ui sub header">
-            Имитационная модель «Ресторатор»
+            Имитационная модель «Ресторанный бизнес»
           </div>
-          Модель "Ресторатор" представляет собой имитационный тренажер по развитию
+          Модель "Ресторанный бизнес" представляет собой имитационный тренажер по развитию
           навыков стратегического управления, системного мышления и принятия
           управленческих решений в динамически сложной среде (dynamic decision-making).
         </div>
